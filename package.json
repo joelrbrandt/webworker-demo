@@ -1,0 +1,15 @@
+{
+  "name": "webworker-demo",
+  "version": "0.0.0",
+  "description": "Demo of HTML5 Web Workers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Joel Brandt",
+  "license": "MIT",
+  "dependencies": {
+    "connect": "~2.7.1"
+  }
+}

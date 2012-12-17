@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Worker</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        #status {
+            height: 200px;
+            max-height: 200px;
+            border: thin solid black;
+            overflow-y: scroll;
+        }
+        
+        #square {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 75px;
+            height: 75px;
+            background-color: rgba(0, 0, 220, 0.3);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>    
+    <h1>Web Worker Demo</h1>
+    <p>Works in Chrome, Safari, and Firefox. Web worker portion works in Opera.</p>
+    <p>Use arrow keys to change the direction of the animated square. The square is animated with <em>requestAnimationFrame</em>.</p>
+    <p>Click the button below to start or stop the worker.</p>
+    <div><input type="button" value="start worker" id="toggleWorker" /></div>
+    <h2>Messages from Worker:</h2>
+    <div id="status"></div>
+    <div id="square"></div>
+<script src="worker-main.js"></script>
+</body>
+</html>
